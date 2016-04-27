@@ -1,0 +1,34 @@
+********* Reecipe Database *********
+
+Welcome to my small, 'simple' recipe database! The functional goal of this project was less to make something interesting and cool (although I think it's pretty cool regardless), and more to learn a bit more to experiment with how C++ handles information (IE classes, structures, that type of thing.) The program has one simple goal: provide a simple, yet intuitive way to manage recipes. The key feature is to be able to change the amount of servings the recipe will make! 
+
+How to use: 
+On startup, the program will display a menu. In this menu are 6 options. As it currently stands, there are zero options within the database. (Note: This will hopefully be addressed in a future version with a few sample recipes). First, add a recipe by pressing 1. It will prompt you for a quick readme (which will only appear once if necessary.) It will then prompt you for the name of a recipe you wish to add. After entering your recipe, it will prompt you for an ingredient. (Such as salt, tomatos, water, those types of things.) The program will then ask you for the quantity and units. This is asking for how much of the ingredient you are considering adding. So for example, if you entered salt for the previous step, then you would type "1 tbsp". It's important you input a number first, followed by a unit. Otherwise, the program can't adjust the portion size! 
+
+When you are finished adding ingredients, simply leave the ingredient input blank and press enter. The program will now prompt you to enter steps. Enter as many as you feel like, and when you are finished, press enter. Now, to access any part of the recipe, when returned to the main menu, press "search." It will prompt you for the recipe, and will return a success message if found. 
+
+Afterwards, a menu option will be available. Each one is self explanatory, and entering an ingredient is no different than it was before. You can view how many ingredients there are, and print the directions. Another option is to modify the serving sizes. For example, if it makes 4 servings, then entering "2" when prompted will cut all proportions in half!
+
+By pressing 6, you may return to the main menu. From the main menu, you can either delete any recipe, or print the entire contents of the database. The database will print it in alphabetical order. Nifty! When finished, simply press "5. Exit."
+
+System Requirements:
+This uses no libraries not found on any other system, so this project should run on any system. Best experienced on an operating system that respects your freedoms!
+
+Group members: 
+Casey Cooter
+
+Contributors:
+Casey Cooter
+
+Open Issues/Bugs/Features
+I have a few more features I am planning on implementing. 
+-Most notably, I want to allow directions to be added and removed. I was unable to get to this point due to time constraints.
+-I want to enable people to import and export the database freely. What good is a program that needs to be running 24/7? 
+
+Bugs: 
+There are a few inputs that, when left blank, will more than likely cause the program to crash. 
+
+If you have a feature request/idea, don't hesitate to let it known! 
+
+
+
