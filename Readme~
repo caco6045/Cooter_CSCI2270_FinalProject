@@ -24,7 +24,6 @@ Settings -> Compiler -> Global Compiler Settings. Then, check the box that says 
 
 If manually compiling, you will need 3 files: main.cpp, RecipeTable.cpp (found in /src/) and RecipeTable.h (found in /include/). Then to run, type the following "g++ -std=c++11 main.cpp RecipeTable.cpp FinalProject", followed by "./FinalProject". NOT recommended unless you know what you are doing!
 
-If using code::blocks, ensure Recipes.txt is in the folder with main.cpp. If Compiling from terminal, make sure it lies in the same location you run the file from!
 
 On startup, the program will display a menu. In this menu are 6 options. As it currently stands, there are zero options within the database. (Note: This will hopefully be addressed in a future version with a few sample recipes). First, add a recipe by pressing 1. It will prompt you for a quick readme (which will only appear once if necessary.) It will then prompt you for the name of a recipe you wish to add. After entering your recipe, it will prompt you for an ingredient. (Such as salt, tomatos, water, those types of things.) The program will then ask you for the quantity and units. This is asking for how much of the ingredient you are considering adding. So for example, if you entered salt for the previous step, then you would type "1 tbsp". It's important you input a number first, followed by a unit. Otherwise, the program can't adjust the portion size!
 

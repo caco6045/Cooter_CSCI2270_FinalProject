@@ -1,14 +1,18 @@
 # depslib dependency file v1.0
-1462039604 source:/home/user/Documents/FinalProject/Cooter_CSCI2270_FinalProject/src/RecipeTable.cpp
+1462290404 source:/home/user/Documents/FinalProject/Cooter_CSCI2270_FinalProject/src/RecipeTable.cpp
 	"RecipeTable.h"
 	<iostream>
+	<fstream>
 	<sstream>
 	<list>
 
-1462039604 /home/user/Documents/FinalProject/Cooter_CSCI2270_FinalProject/include/RecipeTable.h
+1462289010 /home/user/Documents/FinalProject/Cooter_CSCI2270_FinalProject/include/RecipeTable.h
 	<string>
 
-1462040393 source:/home/user/Documents/FinalProject/Cooter_CSCI2270_FinalProject/main.cpp
+1462290376 source:/home/user/Documents/FinalProject/Cooter_CSCI2270_FinalProject/main.cpp
 	<iostream>
+	<fstream>
+	<sstream>
+	<limits>
 	"RecipeTable.h"
 
