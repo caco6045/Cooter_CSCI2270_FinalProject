@@ -161,21 +161,23 @@ void RecipeTable::addRecipe(string title)
 
 void RecipeTable::searchRecipe(string title)
 {
-    int sum = hashSum(title, tableSize);
+     int sum = hashSum(title, tableSize);
     rNode * current = hashTable[sum];
-    if(current == nullptr)
-        cout << "Not found. Consider adding it." << endl;
-    else {
-        if(current->name != title) {
-            while(current != nullptr) {
-                current = current -> next;
-                if(current->name == title)
-                    break;
+    if(current == nullptr || title == "")
+        cout << "Recipe Not found" << endl;
+    else if(current != nullptr || title != "") {
+        while(current != nullptr) {
+            if(current->name == title) {
+                cout <<"The recipe: " << current -> name << " was found." << endl;
+                Menu(current -> name, current);
             }
+            else if(current->name != title){
+
+            }
+            current = current -> next;
         }
-        cout <<"The recipe: " << current -> name << " was found." << endl;
+            //cout << "Recipe Not found, Consider adding it." << endl;
     }
-    Menu(current -> name, current);
 }
 
 void RecipeTable::deleteRecipe(std::string name)
@@ -276,14 +278,19 @@ void RecipeTable::Menu(string title, rNode * current)
 void RecipeTable::printTable()
 {
     list<string> myList;
+    bool isEmpty = true;
     for (int i = 0; i < tableSize; i++) {
         rNode * current = hashTable[i];
         if (current != nullptr) {
             while(current != nullptr) {
+                isEmpty = false;
                 myList.push_back(current -> name);
                 current = current -> next;
             }
         }
+    }
+    if(isEmpty == true){
+        cout << "database is empty" << endl;
     }
     myList.sort();
     for (auto i = myList.begin(); i != myList.end(); ++i) {

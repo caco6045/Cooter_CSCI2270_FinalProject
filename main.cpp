@@ -36,13 +36,20 @@ int main()
         cin.ignore();
         switch(choice) {
         case '1': {
-            if (readme == false) {
+            while (readme == false) {
                 cout << "Do you want to view the readme? This will only display once! Enter yes or no" << endl;
                 string ans;
                 getline(cin,ans);
                 readme = true;
                 if(ans == "yes") {
                     readMe(1);
+                }
+                else if(ans == "no"){
+                    //do nothing
+                }
+                else{
+                    cout <<"Please type yes or no!" << endl;
+                    readme = false;
                 }
             }
             cout << "Enter the name of the recipe you wish to add: ";
