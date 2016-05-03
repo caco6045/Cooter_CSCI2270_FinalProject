@@ -67,7 +67,7 @@ int main()
             break;
             }
          case '5':
-            cout << "omg thanks good  bye n_n" << endl;
+            cout << "Thanks, good-bye n_n" << endl;
             break;
         }
     }

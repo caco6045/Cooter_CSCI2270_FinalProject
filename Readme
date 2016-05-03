@@ -1,8 +1,21 @@
+Changelog:
+30 April, 2016 - Added a .cpb file for users on the Virtual Machine after an error. I was using a newer version of Code::Blocks, which required a newer linux Library. If your version works, don't worry about it.
+30 April, 2016 - Updated a readme instructions a bit. Make sure you are using C++11 standards! Now included in instructions.
+30 April, 2016 - Changed wording in main a bit due to something I forgot to take out. (Doesn't affect functionality)
+
+Big thanks to those who brought these all to my attention!
+
 ********* Reecipe Database *********
 
 Welcome to my small, 'simple' recipe database! The functional goal of this project was less to make something interesting and cool (although I think it's pretty cool regardless), and more to learn a bit more to experiment with how C++ handles information (IE classes, structures, that type of thing.) The program has one simple goal: provide a simple, yet intuitive way to manage recipes. The key feature is to be able to change the amount of servings the recipe will make! 
 
 How to use: 
+If using code::blocks, make sure you are using C++11 standards! This is found in the settings as follows:
+Settings -> Compiler -> Global Compiler Settings. Then, check the box that says "Have g++ follow the C++11 ISO C++ language standard." Then, from code::blocks, simply build the file and run!
+
+If manually compiling, you will need 3 files: main.cpp, RecipeTable.cpp (found in /src/) and RecipeTable.h (found in /include/). Then to run, type the following "g++ -std=c++11 main.cpp RecipeTable.cpp FinalProject", followed by "./FinalProject". NOT recommended unless you know what you are doing! 
+
+
 On startup, the program will display a menu. In this menu are 6 options. As it currently stands, there are zero options within the database. (Note: This will hopefully be addressed in a future version with a few sample recipes). First, add a recipe by pressing 1. It will prompt you for a quick readme (which will only appear once if necessary.) It will then prompt you for the name of a recipe you wish to add. After entering your recipe, it will prompt you for an ingredient. (Such as salt, tomatos, water, those types of things.) The program will then ask you for the quantity and units. This is asking for how much of the ingredient you are considering adding. So for example, if you entered salt for the previous step, then you would type "1 tbsp". It's important you input a number first, followed by a unit. Otherwise, the program can't adjust the portion size! 
 
 When you are finished adding ingredients, simply leave the ingredient input blank and press enter. The program will now prompt you to enter steps. Enter as many as you feel like, and when you are finished, press enter. Now, to access any part of the recipe, when returned to the main menu, press "search." It will prompt you for the recipe, and will return a success message if found. 
