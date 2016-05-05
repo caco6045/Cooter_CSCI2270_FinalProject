@@ -289,6 +289,7 @@ void RecipeTable::addRecipe(string title)
 
 void RecipeTable::searchRecipe(string title)
 {
+//<<<<<<< HEAD
     //search for a recipe in the hash table
     int sum = hashSum(title, tableSize);
     rNode * current = hashTable[sum];
@@ -309,7 +310,6 @@ void RecipeTable::searchRecipe(string title)
         else
             cout << "Not found. Consider adding it." << endl;
     }
-
 }
 
 void RecipeTable::deleteRecipe(std::string name)
@@ -472,10 +472,16 @@ void RecipeTable::printTable()
         }
     }
     myList.sort();
-    for (auto i = myList.begin(); i != myList.end(); ++i)
-    {
-        cout << *i << endl;
-    }
+    if(myList.empty()) //Thanks to aufaamirullah for bringing this to my attention. I mildly addressed it in my method,but this should fix anything else
+        cout << "No recipes found. Consider adding some?" << endl;
+             else
+        {
+        cout << "Printing Database..." << endl;
+            for (auto i = myList.begin(); i != myList.end(); ++i)
+            {
+                cout << *i << endl;
+            }
+        }
 }
 
 
