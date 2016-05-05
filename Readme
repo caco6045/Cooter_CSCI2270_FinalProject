@@ -1,4 +1,7 @@
 Changelog:
+4 May, 2016: 
+Meged changes from aufaamirullah - this includes his Readme fix after reminding me that i probably SHOULD have a readme within the file
+-includes a fix to how the program handles an empty list. Due to my edits, the program would no longer segfault when it was empty, but his changes did remind me that it will not tell the user that the list is empty. Props!
 3 May, 2016:
 -Final Update!I convereted every user input to a getline, so I could stop playing with cin.ignore. Expect no more unexpected freezes!
 -Added a small set of sample recipes from text file. This program now requires "Recipe.txt" so please make sure you pull that as well. It is present in the root of the folder. 
@@ -43,7 +46,7 @@ Group members:
 Casey Cooter
 
 Contributors:
-Casey Cooter
+Casey Cooter, aufaamirullah
 
 Open Issues/Bugs/Features
 I have a few more features I am planning on implementing.
